@@ -14,6 +14,7 @@ RUN apk update \
     && rm /etc/nginx/conf.d/default.conf \
     && echo "upstream php-upstream { server ${PHP_UPSTREAM}:9000; }" > /etc/nginx/conf.d/upstream.conf
 
+# && apk add --no-cache php-sockets \
 CMD ["nginx"]
 
 EXPOSE 80 443

@@ -74,6 +74,8 @@ RUN if [ ${INSTALL_ZIP_ARCHIVE} = true ]; then \
     docker-php-ext-enable zip \
 ;fi
 
+#R UN docker-php-ext-install sockets
+# RUN docker-php-ext-enable sockets
 
 #
 #--------------------------------------------------------------------------
